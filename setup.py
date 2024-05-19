@@ -13,7 +13,7 @@ setup(
     long_description_content_type='text/markdown',
     keywords=['pykozo','html','tags','web','development'],
     classifiers=[
-        'Development Status :: 2 - Prealpha',
+        'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
         'Operating System :: MacOS :: MacOS X',
         'Operating System :: Microsoft :: Windows',
