@@ -2,7 +2,7 @@
 
 PyKozo is a Python library that allows for complete web development using Python scripts. Currently, it only includes the complete HTML module, but other modules will be added in the future.
 
-Version 0.0.1
+Version 0.0.2
 
 Documentation coming soon...
 
