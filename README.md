@@ -130,3 +130,15 @@ if __name__ == "__main__":
 You can add backend logic, and the code will also display a random image from an API.
 
 ![Captura de pantalla_20240519_192004](https://github.com/miangeldev/pykozo/assets/170264335/e96a1618-5458-4b43-b81e-5fd63da763c4)
+
+# Extra Functions
+
+**Add custom tags**
+
+If you want to add a tag that is not registered, you can use the following function:
+
+```python
+pykozo.html.add_tag(_tag='tag name', _content='only if the tag is not a self closing tag', _closing_tag=True/False)
+```
+
+An example of usage would be for PyScript.
