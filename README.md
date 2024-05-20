@@ -104,3 +104,27 @@ and it prints this:
 ```
 <ul><li>Flask</li><li>FastAPI</li><li>Django</li><li>etc</li></ul>
 ```
+
+**Implementation with Flask**
+
+PyKozo can integrate with most Python frameworks, one of which is Flask. Here is a very basic example of how to implement it:
+
+```python
+from pykozo import html
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    page = html()
+    page.h1("Hi everyone")
+    page.h2("My first Page with PyKozo and Flask")
+    page.img(src='https://source.unsplash.com/random', style="width:400px;")
+    return page.compile()
+
+if __name__ == "__main__":
+    app.run()
+```
+
+You can add backend logic, and the code will also display a random image from an API.
