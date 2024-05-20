@@ -38,3 +38,69 @@ We'll get this:
 <h1>Hello World</h1>
 ```
 
+**Attributes**
+
+You can add all kinds of attributes, such as style or class. Here's an example:
+
+```python
+pykozo.html.p('Hi', style='color: #000080;', class='container')
+# After the first attribute, you can pass parameters that go into the HTML
+```
+
+**About self-closing tags**
+
+In HTML, there are tags that only close once, like `<input>`. In this case, for these tags, the first argument is no longer the content but starts as the first attribute. An example is:
+
+```python
+pykozo.html.input(type="submit", value="Submit")
+```
+
+**Components and sections**
+
+PyKozo recommends and even "forces" you to work with components and sections. How do you create a component? Here's how:
+
+```python
+from pykozo import html
+
+def my_button_component(text):
+    button = html()
+    button.button(text, type="button")
+    return button.compile()
+
+def main_page():
+    page = html()
+    buttons = ""
+    for i in range(5):
+        button = my_button_component(f"Button {i}")
+        buttons += button
+    page.div(buttons)
+    return page.compile()
+
+print(main_page())
+```
+and we will receive this:
+```
+<div><button type="button">Button 0</button><button type="button">Button 1</button><button type="button">Button 2</button><button type="button">Button 3</button><button type="button">Button 4</button></div>
+```
+And an example for a section:
+```python
+from pykozo import html
+
+def python_frameworks_list():
+    frameworks = ["Flask", "FastAPI", "Django", "etc"]
+    section = html()
+    for framework in frameworks:
+        section.li(framework)
+    return section.compile()
+
+def main_page():
+    page = html()
+    page.ul(python_frameworks_list())
+    return page.compile()
+
+print(main_page())
+```
+and it prints this:
+```
+<ul><li>Flask</li><li>FastAPI</li><li>Django</li><li>etc</li></ul>
+```
