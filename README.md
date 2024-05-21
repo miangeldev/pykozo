@@ -1,4 +1,4 @@
-# PyKozo ![PyKozo-logo](https://github.com/miangeldev/pykozo/assets/170264335/e9a08425-93b6-4020-9dc4-d7526b62b151)
+# PyKozo
 <img src="https://github.com/miangeldev/pykozo/assets/170264335/e9a08425-93b6-4020-9dc4-d7526b62b151" width="200" height="200" />
 
 PyKozo is a Python library that allows for complete web development using Python scripts. Currently, it only includes the complete HTML module, but other modules will be added in the future.
