@@ -132,7 +132,7 @@ You can add backend logic, and the code will also display a random image from an
 
 ![Captura de pantalla_20240519_192004](https://github.com/miangeldev/pykozo/assets/170264335/e96a1618-5458-4b43-b81e-5fd63da763c4)
 
-# CSS Suport!
+# CSS Support!
 ```python
 from pykozo import CSS
 
