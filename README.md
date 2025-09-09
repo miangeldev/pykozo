@@ -3,7 +3,7 @@
 
 PyKozo is a Python library that allows for complete web development using Python scripts. Currently, it only includes the complete HTML module, but other modules will be added in the future.
 
-Version 0.0.21
+Version 0.0.4
 
 Documentation coming soon...
 
@@ -131,6 +131,69 @@ if __name__ == "__main__":
 You can add backend logic, and the code will also display a random image from an API.
 
 ![Captura de pantalla_20240519_192004](https://github.com/miangeldev/pykozo/assets/170264335/e96a1618-5458-4b43-b81e-5fd63da763c4)
+
+# CSS Suport!
+```python
+from pykozo import CSS
+
+class Styles1(CSS):
+    @CSS.style(name="red-text", type="class")
+    def red_text():
+        color = "red"
+        font_size = "20px"
+
+    @CSS.style(name="blue-bg", type="id")
+    def blue_bg():
+        background_color = "blue"
+        padding = "10px"
+    
+    @CSS.style(name="p", type="tag")
+    def paragraph_style():
+        line_height = "1.5"
+        text_align = "justify"
+
+class Styles2(CSS):
+    @CSS.style(name="green-border", type="class")
+    def green_border():
+        border = "2px solid green"
+        margin = "5px"
+
+    @CSS.style(name="yellow-text", type="id")
+    def yellow_text():
+        color = "yellow"
+        font_weight = "bold"
+
+print("Compiled Styles1 CSS:")
+print(Styles1.compile())
+print("Compiled Styles2 CSS:")
+print(Styles2.compile())
+```
+We'll get this:
+```css
+Compiled Styles1 CSS:
+.red-text {
+  color: red;
+  font-size: 20px;
+}
+#blue-bg {
+  background-color: blue;
+  padding: 10px;
+}
+p {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+Compiled Styles2 CSS:
+.green-border {
+  border: 2px solid green;
+  margin: 5px;
+}
+#yellow-text {
+  color: yellow;
+  font-weight: bold;
+}
+```
 
 # Extra Functions
 
