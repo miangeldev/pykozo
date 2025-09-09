@@ -1,3 +1,31 @@
+Metadata-Version: 2.4
+Name: PyKozo
+Version: 0.0.3
+Summary: PyKozo is a Python library that allows for complete web development using Python scripts.
+Home-page: https://github.com/miangeldev/pykozo
+Author: Miguel Nevado
+Author-email: miangeldev@proton.me
+License: MIT
+Keywords: pykozo,html,tags,web,development
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: summary
+
 # PyKozo
 <img src="https://github.com/miangeldev/pykozo/assets/170264335/e9a08425-93b6-4020-9dc4-d7526b62b151" width="200" height="200" />
 

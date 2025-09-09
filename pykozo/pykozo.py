@@ -675,6 +675,8 @@ class html:
 
             compiled= compiled + f"<{private_arguments["_tag"]}"
             for key,value in data.items():
+                if key == "className":
+                    key="class"
                 compiled= compiled + f' {key}="{value}" '
             if private_arguments["_closing_tag"] == True:
                 compiled=compiled + ">"

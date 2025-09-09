@@ -3,3 +3,4 @@ pykozo/PyKozo.egg-info/
 build/
 dist/
 pykozo/PyKozo.egg-info/
+__pychache__/
