@@ -1,1 +1,1 @@
-from pykozo.pykozo import html
+from pykozo.pykozo import Html
